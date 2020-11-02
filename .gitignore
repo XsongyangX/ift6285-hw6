@@ -1,0 +1,9 @@
+.vscode
+.mypy_cache
+
+data/
+models/
+performances/
+predictions/
+
+devoir6.tar.gz
