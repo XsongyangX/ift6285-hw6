@@ -1,0 +1,99 @@
+accuracies_lower_logistic_tfidf.log
+Closed test
+Min: 0.41
+Max: 0.7
+Mean: 0.5677777777777777
+Open test
+Min: 0.37
+Max: 0.7
+Mean: 0.5388888888888889
+accuracies_raw_logistic_tfidf.log
+Closed test
+Min: 0.41
+Max: 0.7
+Mean: 0.562
+Open test
+Min: 0.37
+Max: 0.7
+Mean: 0.5388888888888889
+accuracies_tweet_logistic_tfidf.log
+Closed test
+Min: 0.43
+Max: 0.79
+Mean: 0.6022222222222222
+Open test
+Min: 0.4
+Max: 0.79
+Mean: 0.5744444444444445
+accuracies_tweet_logistic-C.5_tfidf.log
+Closed test
+Min: 0.39
+Max: 0.75
+Mean: 0.5566666666666666
+Open test
+Min: 0.36
+Max: 0.75
+Mean: 0.5311111111111111
+accuracies_tweet_logistic-C10_tfidf.log
+Closed test
+Min: 0.55
+Max: 0.78
+Mean: 0.672222222222222
+Open test
+Min: 0.51
+Max: 0.78
+Mean: 0.6388888888888888
+accuracies_tweet_logistic-C20_tfidf.log
+Closed test
+Min: 0.56
+Max: 0.79
+Mean: 0.6777777777777776
+Open test
+Min: 0.51
+Max: 0.79
+Mean: 0.6455555555555555
+accuracies_tweet_logistic-C40_tfidf.log
+Closed test
+Min: 0.56
+Max: 0.78
+Mean: 0.6744444444444443
+Open test
+Min: 0.51
+Max: 0.78
+Mean: 0.641111111111111
+accuracies_tweet_logistic-C5_tfidf.log
+Closed test
+Min: 0.54
+Max: 0.77
+Mean: 0.6577777777777778
+Open test
+Min: 0.5
+Max: 0.77
+Mean: 0.6244444444444445
+accuracies_tweet-lower_logistic_tfidf.log
+Closed test
+Min: 0.43
+Max: 0.79
+Mean: 0.6022222222222222
+Open test
+Min: 0.4
+Max: 0.79
+Mean: 0.5744444444444445
+accuracies_tweet-lower-reduce_logistic_tfidf.log
+Closed test
+Min: 0.43
+Max: 0.79
+Mean: 0.6033333333333333
+Open test
+Min: 0.39
+Max: 0.79
+Mean: 0.5744444444444445
+accuracies_tweet-reduce_logistic_tfidf.log
+Closed test
+Min: 0.43
+Max: 0.79
+Mean: 0.6033333333333333
+Open test
+Min: 0.39
+Max: 0.79
+Mean: 0.5744444444444445
