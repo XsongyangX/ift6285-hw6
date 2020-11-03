@@ -1,6 +1,6 @@
 import os
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
-from sklearn.linear_model import LogisticRegression
+from sklearn.naive_bayes import MultinomialNB
 import pandas as pd
 import sys
 from pickle import dump
@@ -11,7 +11,7 @@ csv.field_size_limit(100000000)
 
 # a number of options can control a vectorizer, I reckon you investigate them
 tweet = TweetTokenizer()
-vectorizer = TfidfVectorizer(tokenizer=tweet.tokenize, lowercase=False)
+vectorizer = TfidfVectorizer(tokenizer=tweet.tokenize)
 
 # read from file
 train_data = sys.argv[1]
@@ -23,7 +23,7 @@ with open(train_data, encoding='utf-8') as file:
 X_train = vectorizer.fit_transform(df['blog'])
 
 # several meta-parameters can influence the performance of Logit (investigate)
-clf = LogisticRegression(C=20, n_jobs=-1, multi_class='ovr')
+clf = MultinomialNB()
 
 clf.fit(X_train, df['bloggerID'])
 
