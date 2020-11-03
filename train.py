@@ -4,12 +4,14 @@ from sklearn.linear_model import LogisticRegression
 import pandas as pd
 import sys
 from pickle import dump
+from nltk import TweetTokenizer
 
 import csv
 csv.field_size_limit(100000000)
 
 # a number of options can control a vectorizer, I reckon you investigate them
-vectorizer = TfidfVectorizer()
+tweet = TweetTokenizer()
+vectorizer = TfidfVectorizer(tokenizer=tweet.tokenize)
 
 # read from file
 train_data = sys.argv[1]
