@@ -14,7 +14,7 @@ with open(sys.argv[1], "r") as file:
             raise Exception("Not open nor closed, log file")
 
 for (kind, nums) in [("Closed test", closed), ("Open test", opened)]:
-    print(kind)
-    print("Min: {}".format(min(nums)))
-    print("Max: {}".format(max(nums)))
-    print("Mean: {}".format(sum(nums)/len(nums)))
+    print(kind, \
+        "Min: {}".format(min(nums)), \
+        "Max: {}".format(max(nums)), \
+        "Mean: {}".format(sum(nums)/len(nums)), sep='\t')

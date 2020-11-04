@@ -1,6 +1,6 @@
 import os
 from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
-from sklearn.naive_bayes import MultinomialNB
+from sklearn.neural_network import MLPClassifier
 import pandas as pd
 import sys
 from pickle import dump
@@ -23,7 +23,7 @@ with open(train_data, encoding='utf-8') as file:
 X_train = vectorizer.fit_transform(df['blog'])
 
 # several meta-parameters can influence the performance of Logit (investigate)
-clf = MultinomialNB()
+clf = MLPClassifier(alpha=1, max_iter=1000)
 
 clf.fit(X_train, df['bloggerID'])
 
