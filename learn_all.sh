@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Provide a log file name to store a summary of the performances
-if [ $# -gt 3 ] || [ $# -eq 0 ]; then
+if [ $# -ne 3 ] && [ $# -ne 1 ]; then
 	echo "Usage: ./learn_all.sh name-of-log [--distribute timeout]"
 	echo "Ex: ./learn_all.sh accuracies_raw_logistic_tfidf.log"
     echo "Ex: ./learn_all.sh accuracies_tweet_mlp_tfidf.log --distribute \"1 day\""

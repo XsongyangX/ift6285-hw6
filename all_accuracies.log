@@ -28,6 +28,12 @@ Open test	Min: 0.35	Max: 0.69	Mean: 0.5122222222222222
 reports/accuracies_tweet_logistic-C20_tfidf.log
 Closed test	Min: 0.56	Max: 0.79	Mean: 0.6777777777777776
 Open test	Min: 0.51	Max: 0.79	Mean: 0.6455555555555555
+reports/accuracies_tweet_logistic-C20_tfidf-bigram.log
+Closed test	Min: 0.54	Max: 0.77	Mean: 0.6655555555555556
+Open test	Min: 0.5	Max: 0.77	Mean: 0.6333333333333333
+reports/accuracies_tweet_logistic-C20_tfidf-bigramonly.log
+Closed test	Min: 0.48	Max: 0.74	Mean: 0.6033333333333333
+Open test	Min: 0.44	Max: 0.74	Mean: 0.5733333333333334
 reports/accuracies_tweet_logistic-C20_tfidf-nolower.log
 Closed test	Min: 0.56	Max: 0.8	Mean: 0.6811111111111111
 Open test	Min: 0.51	Max: 0.8	Mean: 0.6477777777777778
@@ -43,13 +49,18 @@ Open test	Min: 0.5	Max: 0.77	Mean: 0.6244444444444445
 reports/accuracies_tweet_mlp_tfidf.log
 Closed test	Min: 0.47	Max: 0.82	Mean: 0.6555555555555554
 Open test	Min: 0.43	Max: 0.82	Mean: 0.6233333333333334
+reports/accuracies_tweet_mlp-alpha1_tfidf.log
+Closed test	Min: 0.05	Max: 0.76	Mean: 0.3622222222222222
+Open test	Min: 0.05	Max: 0.76	Mean: 0.3566666666666667
+reports/accuracies_tweet_mlp-iter1000_tfidf.log
+Closed test	Min: 0.05	Max: 0.76	Mean: 0.3711111111111111
+Open test	Min: 0.05	Max: 0.76	Mean: 0.3611111111111111
 reports/accuracies_tweet_multiNB_tfidf.log
 Closed test	Min: 0.26	Max: 0.58	Mean: 0.36000000000000004
 Open test	Min: 0.24	Max: 0.58	Mean: 0.3422222222222222
 reports/accuracies_tweet_multiNB_tfidf-nolower.log
 Closed test	Min: 0.28	Max: 0.6	Mean: 0.3744444444444445
 Open test	Min: 0.26	Max: 0.6	Mean: 0.35888888888888887
-reports/accuracies_tweet_qda_tfidf.log
 reports/accuracies_tweet_rforest_tfidf.log
 Closed test	Min: 0.43	Max: 0.73	Mean: 0.5411111111111111
 Open test	Min: 0.4	Max: 0.73	Mean: 0.5177777777777778
