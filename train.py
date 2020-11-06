@@ -11,7 +11,7 @@ csv.field_size_limit(100000000)
 
 # a number of options can control a vectorizer, I reckon you investigate them
 tweet = TweetTokenizer()
-vectorizer = TfidfVectorizer(tokenizer=tweet.tokenize, ngram_range=(2,2))
+vectorizer = TfidfVectorizer(tokenizer=tweet.tokenize, lowercase=False)
 
 # read from file
 train_data = sys.argv[1]

@@ -15,10 +15,22 @@ with open("tfidf_default-10-100.vec", "rb") as file:
     int_to_feature = vectorizer.get_feature_names()
 
 # Examine coefficients of the feature matrix
-for i, author in enumerate(model.classes_):
-    print(author, "top features from logistic regression")
-    word_importance = [abs(x) for x in model.coef_[i]]
-    sorted_word_importance = sorted(zip(word_importance, range(len(model.coef_[i]))),\
-        key=lambda x: x[0], reverse=True)
-    words = [int_to_feature[word] for _,word in sorted_word_importance[:10]]
-    print("\t".join(words))
+# for i, author in enumerate(model.classes_):
+#     print(author, "top features from logistic regression")
+#     word_importance = [abs(x) for x in model.coef_[i]]
+#     sorted_word_importance = sorted(zip(word_importance, range(len(model.coef_[i]))),\
+#         key=lambda x: x[0], reverse=True)
+#     words = [int_to_feature[word] for _,word in sorted_word_importance[:10]]
+#     print("\t".join(words))
+
+# print coefficients to csv
+# import pandas as pd
+# coeffs = pd.DataFrame(data={'coeffs':model.coef_[0]})
+# coeffs.to_csv(path_or_buf="logistic_coeffs.csv", header=False, index=False)
+
+# plot bar graphs
+# import matplotlib.pyplot as plt
+# plt.bar(range(len(model.coef_[0])), model.coef_[0])
+# axes = plt.gca()
+# axes.set_ylim([-3,3])
+# plt.savefig("bar.png")
