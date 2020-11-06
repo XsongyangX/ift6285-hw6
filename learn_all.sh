@@ -14,7 +14,7 @@ chmod u+x *.sh
 ./clean.sh
 
 # Distributed
-if [ $2 == "--distribute" ]; then
+if [ $# -eq 3 ] && [ $2 == "--distribute" ]; then
 
     ./train_all.sh distribute
 

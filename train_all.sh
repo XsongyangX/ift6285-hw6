@@ -10,7 +10,7 @@ for i in "${authors[@]}"; do
 
         directory="data/blog-$i-$j-10"            
 
-        if [ $1 == "distribute" ]; then
+        if [ $# -eq 1 ] && [ $1 == "distribute" ]; then
             pkscreen -S worker ssh ens -J arcade bash $(pwd)/parallel_train.sh $directory/train.csv $i-$j        
         else
             python train.py $directory/train.csv $i-$j
